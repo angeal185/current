@@ -1,0 +1,39 @@
+{% import "macros/macros.njk" as macro %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,700">
+    {{macro.css(s="bootstrap")}}
+    {{macro.css(s="font-awesome.min")}}
+    {{macro.css(s="font")}}    
+    {{macro.css(s="style")}}
+    <link rel="stylesheet" href="css/style.css" id="theme-stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+  </head>
+  <body>
+
+	{% include "includes/header.njk" %}
+	<div class="d-flex align-items-stretch">
+		{% include "includes/sidebar.njk" %}
+		<div class="page-content">
+		{% include "includes/pageHeader.njk" %}
+		{% block content %}{% endblock %}
+		{% include "includes/footer.njk" %}
+		</div>
+	</div>
+
+    {%block scripts%}{% endblock %}
+	{{macro.js(s="jquery.min")}}
+	{{macro.js(s="popper.min")}}
+	{{macro.js(s="bootstrap.min")}}
+	{{macro.js(s="jquery.cookie")}}
+	{{macro.js(s="Chart.min")}}
+	{{macro.js(s="charts-home")}}
+	{{macro.js(s="charts-custom")}}
+	{{macro.js(s="front")}}
+  </body>
+</html>

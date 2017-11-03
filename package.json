@@ -1,0 +1,22 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "nodejs ecommerce website",
+  "main": "admin/app/bin/www",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ben eaves",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "morgan": "~1.9.0",
+    "nunjucks": "^3.0.1"
+  },
+  "devDependencies": {
+    "node-static": "^0.7.9",
+    "require-dir": "^0.3.2"
+  }
+}

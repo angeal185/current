@@ -1,0 +1,24 @@
+{
+    "app": {
+        "port": 3000,
+		"ext":"njk",
+		"views":"admin/views",
+		"viewOpt":{
+			"autoescape": true,
+			"trimBlocks": true,
+			"lstripBlocks": true
+		}
+    },
+	"entries":[
+		"login",
+		"forms",
+		"charts",
+		"tables",
+		"register"
+	
+	],
+	"static":[
+		"admin/public",
+		"app/shared"
+	]
+}
